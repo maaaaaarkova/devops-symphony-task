@@ -22,7 +22,7 @@ jobs:
     - name: Build and push Docker images (fork from Docker)
       uses: printesoi/build-push-action@v1.1
       with:
-        username:  ${{ secrets.DOCKER_HUB_USERNAME }
+        username:  ${{ secrets.DOCKER_HUB_USERNAME }}
         password: ${{ secrets.DOCKER_HUB_PASSWORD }}
         repository: devopstask
 
