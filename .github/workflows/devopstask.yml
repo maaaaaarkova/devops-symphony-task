@@ -19,10 +19,10 @@ jobs:
       with:
         username: ${{ secrets.DOCKER_HUB_USERNAME }}
         password: ${{ secrets.DOCKER_HUB_PASSWORD }}
-    - name: docker-build-and-publish
-      uses: philips-software/docker-ci-scripts@v3.3.2
+    - name: Build and push Docker images (fork from Docker)
+      uses: printesoi/build-push-action@v1.1
       with:
-        dockerfile: .
-        image-name: devopstask
-        tags: maaaaaarkova/devopstask latest
-    
+        username:  ${{ secrets.DOCKER_HUB_USERNAME }
+        password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+        repository: devopstask
+
