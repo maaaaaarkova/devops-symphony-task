@@ -59,7 +59,7 @@ provisioner "remote-exec" {
         "sudo apt-get install curl",
         "curl -ssl https://get.docker.com/ | sh",
         "sudo docker run -d --name devopstask -p 80:80 maaaaaarkova/devopstask",
-        "sudo docker run -d --name watchtower --volume /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --cleanup -i 20"
+        "sudo docker run -d --name watchtower --volume /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --cleanup -i 5"
     ]
 }
 }
