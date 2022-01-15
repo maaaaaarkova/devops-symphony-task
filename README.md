@@ -88,3 +88,46 @@
     ]
 }
  ```
+ 
+ <br>
+ <h2>Github actions</h2>
+ <p>
+ Github actions let us build a pipeline, which runs a Lint to check the code and deploy this code to Docker with "latest" tag, so it gets auto-updated with each push to Github.
+  </p>
+ 
+```yml
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Lint Dockerfile
+      uses: luke142367/Docker-Lint-Action@v1.0.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Docker Login
+      uses: docker/login-action@v1.12.0
+      with:
+        username: ${{ secrets.docker_username }}
+        password: ${{ secrets.docker_password }}
+        
+    - name: Build and push
+      id: docker_build
+      uses: docker/build-push-action@v2
+      with:
+          push: true
+          tags: maaaaaarkova/devopstask:latest
+
+```
+ 
