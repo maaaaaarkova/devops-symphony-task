@@ -131,3 +131,16 @@ jobs:
 
 ```
  
+ <br>
+ <h2>Monitoring tools (AWS CloudWatch)</h2>
+ Setting monitoring tools and creating alarms on some metrics if something goes wrong.
+<br><br>
+<img src="https://user-images.githubusercontent.com/76499690/149620935-7a78211c-0eaa-4aea-ad8f-d6fd174f0cf3.png">
+<br>
+<img src = "https://user-images.githubusercontent.com/76499690/149621047-8ed32504-a5db-4280-9591-9df427c8d09a.png">
+
+<br>
+ <h2>Connecting to a DNS name</h2>
+Connecting to a real DNS name using WEB service AWS route 53
+<br> <br>
+<img src = "https://user-images.githubusercontent.com/76499690/149621217-43d4c0ce-76f0-4635-bc36-3776fe645eaa.png">
