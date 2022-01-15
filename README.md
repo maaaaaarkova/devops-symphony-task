@@ -84,7 +84,7 @@
  <br>
  <h2>Github actions</h2>
  <p>
- Github actions let us build a pipeline, which runs a Lint to check the code and deploy this code to Docker with "latest" tag, so it gets auto-updated with each push to Github.
+ Github actions lets us build a pipeline, which runs a Lint to check the code and deploy this code to Docker with "latest" tag, so it gets auto-updated with each push to Github.
   </p>
  
 ```yml
