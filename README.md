@@ -3,7 +3,7 @@
 <img src = "https://img.shields.io/github/workflow/status/maaaaaarkova/devtask/Docker%20Image%20CI">
 </p>
 
-<h2 align="center"><a href="http://devopstask.pp.ua/">LINK TO THE SITE</a></h2>
+<h2 align="center"><a href="http://www.devopstask.pp.ua/">LINK TO THE SITE</a></h2>
 <p align = "center">
   <br>
   <img src = "https://media.giphy.com/media/ijgei9cL5vqK5uVhll/giphy.gif">
