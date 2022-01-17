@@ -1,7 +1,5 @@
 provider "aws" {
     region = "eu-central-1"
-    access_key = "AKIAYMYPYOANUQSF7CLK"
-    secret_key = "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"
 }
 
 resource "aws_security_group" "devtask_web" {
