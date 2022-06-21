@@ -1,4 +1,4 @@
-<h1 align="center">DevOps task</h1>
+<h1 align="center">DevOps test task</h1>
 <p align = "center">
 <img src = "https://img.shields.io/github/workflow/status/maaaaaarkova/devtask/Docker%20Image%20CI">
 </p>
